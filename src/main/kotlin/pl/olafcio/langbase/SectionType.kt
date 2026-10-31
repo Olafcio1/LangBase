@@ -51,9 +51,6 @@ abstract class SectionType {
 
                     prefix += space
                     prefixReady = true
-                } else {
-                    if (!trim.isEmpty())
-                        throw SyntaxError("Incorrect amount of spaces provided: ${spaces}")
                 }
 
                 return State.CONTINUE

@@ -71,6 +71,9 @@ open class Parser<RootElement, Element> {
             // Stupid kotlin
             var regex = regex
 
+            if (!regex.startsWith('^'))
+                regex = '^' + regex
+
             if (!regex.endsWith('$'))
                 regex += '$'
 
