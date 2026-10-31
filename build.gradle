@@ -19,6 +19,7 @@ def targetJavaVersion = 11
 
 java {
     toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    withSourcesJar()
 }
 
 tasks.withType(JavaCompile).configureEach {
