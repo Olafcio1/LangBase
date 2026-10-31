@@ -122,7 +122,7 @@ open class Parser<RootElement, Element> {
                           = ArrayList()
 
     open fun addGlobalStatement(regex: String, function: Function<Matcher, RootElement?>) {
-        addGlobalStatement(regex, { matcher, firstLine -> function.apply(matcher) })
+        addGlobalStatement(regex) { matcher, _ -> function.apply(matcher) }
     }
 
     open fun addGlobalStatement(regex: String, function: BiFunction<Matcher, String, RootElement?>) {
