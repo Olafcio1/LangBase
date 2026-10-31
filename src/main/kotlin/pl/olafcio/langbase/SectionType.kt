@@ -3,6 +3,10 @@ package pl.olafcio.langbase
 abstract class SectionType {
     protected lateinit var prefix: String
 
+    fun getMyPrefix(): String {
+        return prefix
+    }
+
     fun setInitialPrefix(prefix: String) {
         this.prefix = prefix
         reset()

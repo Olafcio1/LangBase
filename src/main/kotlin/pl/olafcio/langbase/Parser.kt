@@ -182,6 +182,7 @@ open class Parser<RootElement, Element> {
                 break
             } else {
                 nextLine()
+                content.add(line.substring(sectionType.getMyPrefix().length))
 
                 if (state == SectionType.State.CLOSE)
                     break
