@@ -1,2 +1,2 @@
 # LangBase
-Parsing framework for Groovy
+Simple language parsing framework for Kotlin
